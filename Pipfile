@@ -12,7 +12,7 @@ tweepy = "==3.8.0"
 nltk = "*"
 numpy = "*"
 pandas = "*"
-psycopg2 = "==2.7.5"
+psycopg2-binary = "*"
 
 
 [requires]
