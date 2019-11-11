@@ -18,11 +18,11 @@ if __name__ == '__main__':
     parser.add_argument('--reset', default=0, type=int)
     args = parser.parse_args()
 
-    schemas_path = './configs/schemas.yaml'
+    schemas_path = './app/src/tweet_ingestion/schemas.yaml'
     with open(schemas_path) as stream:
         schemas = yaml.safe_load(stream)
 
-    conn = psycopg2.connect(dbname='alternative_data')
+    conn = psycopg2.connect(dbname='stream_tweets')
 
     # Drop existing tables
     if args.reset:

@@ -12,15 +12,6 @@ def get_all_tables(connection: psycopg2.extensions.connection) -> List[str]:
     return [result[0] for result in results]
 
 
-def get_nrows(table: str, conn: psycopg2.extensions.connection) -> int:
-    cur = conn.cursor()
-    dml = f"""SELECT COUNT(*) FROM {table}"""
-    cur.execute(dml)
-    result = cur.fetchone()
-    cur.close()
-    return result[0]
-
-
 def get_first_row(name: str, connection: psycopg2.extensions.connection) -> Tuple[Any]:
     cur = connection.cursor()
     dml = f"""SELECT * FROM {name};"""
