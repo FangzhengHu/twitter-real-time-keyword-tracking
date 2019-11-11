@@ -1,8 +1,7 @@
-# alternative-data-system
-A system that collect, process, and analyse alternative data in real-time to provide insights for investment.
+# twitter-real-time-keyword-tracking
+App for tracking and analysing tweets that contain interested keywords in real-time. It's built to provide insights for brand analytics and stock price prediction.
 
-Data sources included:
-- twitter
+
 # Quick Start
 ### Set up environment
 Install dependent python packages
@@ -23,9 +22,9 @@ Install and start database server
 Create database and tables
 
     # Create database
-    createdb alternative_data
+    createdb stream_tweets
     # Create tables
-    python src/create_tables.py
+    python app/src/tweet_ingestion/create_tables.py
 
 ### Set up twitter credentials
 
