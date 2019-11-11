@@ -1,1 +1,1 @@
-TRACK_WORDS = ['Facebook']
+TRACK_WORDS = ['tesla']
