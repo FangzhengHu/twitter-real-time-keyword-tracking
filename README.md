@@ -29,3 +29,7 @@ Create database and tables
 ### Set up twitter credentials
 
 ### Set up word to be tracked
+
+### Fetching streaming tweets
+    
+    python app/src/tweet_ingestion/streaming.py
