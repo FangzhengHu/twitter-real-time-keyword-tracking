@@ -13,6 +13,8 @@ nltk = "*"
 numpy = "*"
 pandas = "*"
 psycopg2-binary = "*"
+tweet-preprocessor = "*"
+textblob = "*"
 
 
 [requires]
