@@ -3,7 +3,7 @@ App for tracking and analysing tweets that contain interested keywords in real-t
 
 
 # Quick Start
-### Set up environment
+#### Set up environment
 Install dependent python packages
 
     pipenv sync
@@ -26,10 +26,14 @@ Create database and tables
     # Create tables
     python app/src/tweet_ingestion/create_tables.py
 
-### Set up twitter credentials
+#### Set up twitter credentials
 
-### Set up word to be tracked
+#### Set up word to be tracked
 
-### Fetching streaming tweets
+#### Fetching streaming tweets
     
     python app/src/tweet_ingestion/streaming.py
+    
+#### Launch the analytics APP
+
+    python app/src/analytics/dash_app.py
