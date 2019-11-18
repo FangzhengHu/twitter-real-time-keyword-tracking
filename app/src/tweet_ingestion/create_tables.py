@@ -33,5 +33,7 @@ if __name__ == '__main__':
     for schema in schemas:
         create_table(schema['name'], schema['schema'], conn)
 
+    conn.close()
+
 
 

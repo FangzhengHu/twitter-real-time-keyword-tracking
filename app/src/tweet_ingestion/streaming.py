@@ -104,3 +104,5 @@ if __name__ == '__main__':
     logger.info('Start streaming')
     myStream.filter(languages=["en"], track=settings.TRACK_WORDS)
 
+    conn.close()
+
